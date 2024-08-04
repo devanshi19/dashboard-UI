@@ -1,0 +1,78 @@
+@import "../../assets//Styles/Common.scss";
+.goal-wrap {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .goal-left {
+    width: 12%;
+    @include for-desktop {
+      width: 25%;
+    }
+    @include for-tablet {
+      width: 27%;
+    }
+    .icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      @include for-tablet {
+        width: 40px;
+        height: 40px;
+      }
+      &.goal {
+        background-color: #5f3237;
+      }
+      &.dish {
+        background-color: #293368;
+      }
+      &.menu {
+        background-color: #214960;
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        &.goal {
+          color: #f96a27;
+        }
+        &.dish {
+          color: #6a89f1;
+        }
+        &.menu {
+          color: #249dd7;
+        }
+      }
+    }
+  }
+  .goal-right {
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include for-desktop {
+      width: 75%;
+    }
+    p {
+      color: #fdfdfd;
+    }
+    span {
+      height: 25px;
+      width: 25px;
+      background-color: #47484e;
+      border: 1px solid #47484e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .icon {
+        font-weight: bold;
+        color: #fdfdfd;
+      }
+    }
+  }
+}

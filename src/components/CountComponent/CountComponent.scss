@@ -1,0 +1,128 @@
+@import "../../assets/Styles/Common.scss";
+.count-component-wrap {
+  width: 19%;
+  height: 100px;
+  background-color: #202028;
+  border: 1px solid #202028;
+  border-radius: 5px;
+  padding: 15px;
+  @include for-large-desktop {
+    width: 18%;
+  }
+  @include for-desktop {
+    width: 16%;
+  }
+  @include for-tablet {
+    width: 18%;
+  }
+  @include for-phone {
+    width: 41%;
+  }
+  @include for-small-phone {
+    width: 38%;
+  }
+
+  .count-top {
+    display: flex;
+    flex-direction: column;
+    .count-icon-wrap {
+      width: 40px;
+      height: 40px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include for-desktop {
+        width: 30px;
+        height: 30px;
+      }
+
+      &.total {
+        background-color: #2a3268;
+      }
+      &.delivered {
+        background-color: #135344;
+      }
+      &.cancelled {
+        background-color: #5f3237;
+      }
+      &.revenue {
+        background-color: #5c2a4b;
+      }
+      .count-icon {
+        width: 25px;
+        height: 25px;
+        @include for-desktop {
+          width: 20px;
+          height: 20px;
+        }
+        &.total {
+          fill: #4163fd;
+          color: #4163fd;
+        }
+        &.delivered {
+          fill: #71e2c1;
+          color: #71e2c1;
+        }
+        &.cancelled {
+          fill: #f25e5e;
+          color: #f25e5e;
+        }
+        &.revenue {
+          fill: #e8429e;
+          color: #e8429e;
+        }
+      }
+    }
+
+    span {
+      margin-top: 10px;
+      color: #fdfdfd;
+      @include for-desktop {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .count-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    span {
+      color: #fdfdfd;
+      &.number {
+        font-size: 25px;
+        font-weight: 600;
+
+        @include for-desktop {
+          font-size: 20px;
+        }
+      }
+    }
+    .percentage-wrap {
+      display: flex;
+      .icon {
+        height: 25px;
+        width: 25px;
+      }
+      &.green {
+        span {
+          color: #00ca8d;
+        }
+        .icon {
+          color: #00ca8d;
+        }
+      }
+      &.red {
+        span {
+          color: #e6535a;
+        }
+        .icon {
+          color: #e6535a;
+        }
+      }
+    }
+  }
+}

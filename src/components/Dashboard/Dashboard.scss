@@ -1,0 +1,141 @@
+@import "../../assets/Styles/Common.scss";
+.dashboard-wrap {
+  background-color: #141416;
+  width: 100%;
+  h2 {
+    padding: 15px 20px;
+    color: #fdfdfd;
+  }
+  .dashboard-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+    column-gap: 30px;
+    margin-bottom: 20px;
+    @include for-desktop {
+      column-gap: 25px;
+    }
+    .count-wrap {
+      width: 57%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 15px;
+      row-gap: 15px;
+      @include for-desktop {
+        width: 64%;
+        margin-bottom: 15px;
+      }
+      @include for-tablet{
+        width: 100%;
+      }
+    }
+    .profit-comp-wrap {
+      width: 40%;
+      @include for-desktop {
+        width: 33%;
+      }
+      @include for-tablet{
+        width: 100%;
+      }
+    }
+  }
+  .dashboard-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+    column-gap: 30px;
+    margin-bottom: 20px;
+    @include for-desktop {
+      column-gap: 25px;
+    }
+
+    .activity-comp-wrap {
+      background-color: #202028;
+      width: 55%;
+      padding: 20px;
+      border-radius: 5px;
+      @include for-desktop {
+        width: 60%;
+      }
+      @include for-tablet {
+        width: 56%;
+      }
+      @include for-phone {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .goal-comp-wrap {
+      background-color: #202028;
+      width: 37%;
+      padding: 20px;
+      border-radius: 5px;
+      @include for-desktop {
+        width: 28%;
+      }
+      @include for-phone {
+        width: 100%;
+      }
+    }
+  }
+  .dashboard-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+    column-gap: 30px;
+    margin-bottom: 20px;
+    @include for-desktop {
+      column-gap: 25px;
+    }
+    .order-comp-wrap {
+      width: 55%;
+      background-color: #202028;
+      padding: 20px;
+      border-radius: 5px;
+      @include for-desktop {
+        width: 60%;
+      }
+      @include for-tablet {
+        width: 56%;
+      }
+      @include for-phone {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .feedback-comp-wrap {
+      width: 37%;
+      background-color: #202028;
+      padding: 20px;
+      border-radius: 5px;
+      max-height: 400px;
+      overflow-y: auto;
+      @include for-desktop {
+        width: 28%;
+      }
+      @include for-phone {
+        width: 100%;
+      }
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 12px;
+      }
+      &::-webkit-scrollbar-track {
+        border: 1px solid transparent;
+        padding: 2px 0;
+        background-color: transparent;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #a8a8a6;
+        border: 1px solid transparent;
+      }
+    }
+  }
+}

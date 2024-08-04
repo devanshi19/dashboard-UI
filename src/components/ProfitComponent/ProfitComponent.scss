@@ -1,0 +1,55 @@
+@import "../../assets/Styles/Common.scss";
+ .profit-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202028;
+  border: 1px solid #202028;
+  border-radius: 5px;
+  padding: 15px 25px;
+  .profit-left {
+    h6,
+    p {
+      color: #fdfdfd;
+    }
+    p {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 12px 0px;
+      @include for-desktop {
+        font-size: 24px;
+      }
+    }
+    .percentage-wrap {
+      display: flex;
+      span {
+        color: #00ca8d;
+      }
+      .icon {
+        height: 25px;
+        width: 25px;
+        color: #00ca8d;
+      }
+    }
+  }
+  .profit-right {
+    .MuiCircularProgress-root {
+      div {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: center;
+        span {
+          color: #fdfdfd;
+          &:first-child {
+            font-size: 30px;
+            font-weight: bold;
+          }
+          &:last-child {
+            font-size: 8px;
+          }
+        }
+      }
+    }
+  }
+}

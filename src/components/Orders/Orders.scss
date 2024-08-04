@@ -1,0 +1,59 @@
+@import "../../assets/Styles/Common.scss";
+.orders-wrap {
+  h2 {
+    margin: -20px;
+    color: #fdfdfd;
+  }
+  .table-wrap {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #dcdcdc;
+      @include for-tablet {
+        font-size: 14px;
+      }
+      @include for-small-phone{
+        font-size: 10px;
+      }
+      th,
+      td {
+        border-bottom: 2px solid #2e2e36;
+        text-align: left;
+        padding: 12px 0px;
+        .status-span {
+          width: 80px;
+          @include for-tablet {
+            width: 60px;
+          }
+          display: block;
+          height: 18px;
+          border-radius: 20px;
+          padding: 4px;
+          text-align: center;
+          &.Delivered {
+            background-color: #145346;
+            color: #02c48b;
+          }
+          &.Pending,
+          &.Cancelled {
+            background-color: #5c3339;
+            color: #e25c5f;
+          }
+        }
+      }
+
+      .cutomer-name {
+        display: flex;
+        align-items: center;
+        span {
+          margin-left: 10px;
+        }
+        img {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

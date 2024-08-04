@@ -1,0 +1,41 @@
+.feedback-wrap {
+  h2 {
+    margin: -20px;
+    color: #fdfdfd;
+  }
+  .feedback {
+    padding: 15px 0px;
+    border-bottom: 2px solid #2e2e36;
+    .feedback-top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .icon {
+        width: 30px;
+        height: 30px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      span {
+        color: #fdfdfd;
+        margin-left: 5px;
+      }
+    }
+    .star-wrap {
+      color: #fcdd2b;
+      font-size: 20px;
+      margin-bottom: 5px;
+      .empty {
+        color: #fdfdfd;
+      }
+    }
+    .feedback-bottom {
+      p {
+        color: #949398;
+      }
+    }
+  }
+}

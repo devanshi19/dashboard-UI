@@ -1,0 +1,23 @@
+.activity-wrap {
+  .activity-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    h2 {
+      color: #fdfdfd;
+      margin: -20px;
+    }
+    select {
+      background-color: #4b4c51;
+      color: #d2d3d5;
+      padding: 3px 5px;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      font-size: 12px;
+    }
+  }
+  .activity-bottom {
+    max-height: 200px;
+  }
+}
